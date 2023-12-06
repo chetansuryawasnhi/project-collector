@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="em.css" />
+  <title>Document</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+     overflow:auto;
+      
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="active">Home</a>
+  <!-- Add more project links dynamically -->
+  <a href="http://localhost:8000/signup/" >resgistre project</a>
+  <a href="http://localhost:8000/login/" >College login</a>
+  <a href="#" >Expertise</a>
+  <a href="#" >contact</a>
+</nav>
+
+<!-- Content container -->
+<div id="content">
+  <h2>Welcome to the Project Platform</h2>
+</div>
+
+<script>
+  function displayProjects(college) {
+    // You can fetch and display projects for the selected college here
+    // For simplicity, let's just update the content dynamically
+    document.getElementById("content").innerHTML = `
+      <h2>Projects from ${college}</h2>
+      <p>List of projects taken up by students of ${college}.</p>
+      <!-- Add the actual project content here -->
+    `;
+
+    // Remove the 'active' class from all links
+    var navLinks = document.getElementsByTagName("a");
+    for (var i = 0; i < navLinks.length; i++) {
+      navLinks[i].classList.remove("active");
+    }
+
+    // Add the 'active' class to the clicked link
+    event.target.classList.add("active");
+  }
+</script>
+
+</body>
+</html>
+
+
+<body>    <style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fbfcfc;
+  }
+
+  h1 {
+      color: red;
+      text-align: center;
+  }
+
+  h2 {
+      color: black;
+      text-align: center;
+  }
+
+  h3 {
+      color: black;
+      text-align: center;
+  }
+
+  p {
+      font-family: "Times New Roman";
+      font-size: 20px;
+  }
+
+  #first {
+      position: relative;
+      margin-top: 380px;
+      height: 50px;
+      width: 50px;
+  }
+
+  #second {
+      position: relative;
+      margin-top: -50px;
+      margin-left: 255px;
+      height: 200px;
+      width: 210px;
+  }
+
+  #third {
+      position: relative;
+      margin-top: -200px;
+      margin-left: 555px;
+      height: 200px;
+      width: 200px;
+  }
+
+  #fourth {
+      position: relative;
+      margin-top: 120px;
+      margin-left: -10px;
+      height: 200px;
+      width: 100px;
+  }
+
+  #fifth {
+      position: relative;
+      top: -200px;
+      margin-left: 300px;
+  }
+
+  #sixth {
+      position: relative;
+      top: -285px;
+      left: 140px;
+  }
+
+  #SPPU {
+      position: relative;
+      top: 160px;
+      left: -440px;
+  }
+
+  #SRTMUN {
+      position: relative;
+      top: 160px;
+      left: -370px;
+  }
+
+  #AI {
+      margin-top: 260px;
+      margin-left: -200px;
+  }
+
+  img {
+      width: 50;
+      float: left;
+  }
+
+  #rr {
+      background-color: rgb(170, 230, 245);
+  }
+
+  #kk {
+      margin-top: -350px;
+      margin-left: 400px;
+  }
+  .form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    position: relative;
+    color: #333333;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Add some responsiveness */
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 90%;
+    }
+}
+
+
+  * {
+      box-sizing: border-box;
+  }
+
+  .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+  }
+
+  .row::after {
+      clear: both;
+      display: table;
+  }
+
+  
+
+  form {
+      max-width: 500px;
+      margin: 0 auto;
+  }
+
+  label {
+      display: block;
+      margin-bottom: 8px;
+  }
+
+  input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+  }
+
+  button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  button:hover {
+      background-color: #45a049;
+  }
+
+  #mm {
+      margin-top: -300px;
+      margin-left: 400px;
+  }
+  .form-heading{
+    position: relative;
+    left:-500px;
+
+  }
+  
+</style>
+</head>
+<div class="form-container">
+  <h2 class="heading">University Name Submission</h2>
+  <form action="#" method="post">
+    {% csrf_token %}
+    {% load static %}
+    <!-- Update the input element with an ID -->
+    <input type="text" id="universityNameInput" name="universityName" placeholder="University Name" required>
+    <button type="submit"><b>Signup</b></button><br>
+  </form>
+</div>
+<div id="kk">
+  <div id="first" onclick="displayUniversityName('BAMU')">
+    <img src="static/h.jpg" alt="BAMU" height="200px" width="200px" name="bamu"><br>
+    <h2><b>BAMU</b></h2>
+  </div>
+  <div id="second"  onclick="displayUniversityName('MGM')">
+   <img src="static/mgm.jpg" alt="MGM" height="200px" ; width="200px"><br>
+    <h2 id="MGM"><b>MGM</b></h2>
+  </div>
+  
+   <div id="third"  onclick="displayUniversityName('sandip')">
+   <img src="static/sandip.jpg" alt="Sandip University" height="200px" ; width="200px"><br>
+    <h2 id="Sandip University"><b>Sandip University</b></h2>
+   </div>
+   <div id="fourth"  onclick="displayUniversityName('Shivaji')">
+    <img src="static/shivaji.jpeg" alt="Shivaji University" height="200px" ; width="200px"><br>
+    <h2 id="Shivaji university"><b>Shivaji university</b></h2>
+   </div>
+   <div id="fifth"  onclick="displayUniversityName('sppu')">
+    <img src="static/sppu.jpg" alt="SPPU" height="200px" ;width="200px"><br>
+      <h2 id="SPPU"><b>SPPU</b></h2>
+    </div>
+   <div id="sixth"  onclick="displayUniversityName('srtmun')">
+    <img src="static/SRTMUN.png" alt="SRTMUN" height="200px" width="200px"><br>
+      <h2 id="SRTMUN" name=""><b>SRTMUN</b></h2>
+   </div>
+</div>
+
+
+    <button id="mm"><a href="#content">Go to TOP</a></button>
+</div>
+
+<script>
+  function displayUniversityName(university) {
+    // Set the value of the input field to the selected university
+    document.getElementById("universityNameInput").value = university;
+
+    // Optionally, you can submit the form programmatically if needed
+    // document.forms[0].submit();
+
+    // Remove the 'active' class from all links (assuming you have links for universities)
+    var universityLinks = document.querySelectorAll("#kk a");
+    for (var i = 0; i < universityLinks.length; i++) {
+      universityLinks[i].classList.remove("active");
+    }
+
+    // Add the 'active' class to the clicked link (assuming you have links for universities)
+    event.target.classList.add("active");
+  }
+</script>
+</body>
+</html>
